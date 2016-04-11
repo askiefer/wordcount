@@ -24,6 +24,10 @@ def word_count(file):
                 else:
                     word = word[:-1]
                     add_word_to_dict(word)
-    print dictionary
+
+    info = sorted(dictionary.items(), key= lambda x: x[1])
+
+    print info
+
 
 word_count(sys.argv[1])
