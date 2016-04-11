@@ -1,5 +1,6 @@
 
 dictionary = {}
+import sys
 
 def add_word_to_dict(word):
     if word in dictionary:
@@ -25,4 +26,4 @@ def word_count(file):
                     add_word_to_dict(word)
     print dictionary
 
-word_count("test.txt")
+word_count(sys.argv[1])
